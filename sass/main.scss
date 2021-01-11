@@ -1,5 +1,3 @@
-$color-1 : #fff;
-body{
-  background-color:rgb(193, 215, 223);
-  color: $color-1;
-}
+@import "./components/normalize.scss";
+@import "./variables/index.scss";
+@import "./components/index.scss";

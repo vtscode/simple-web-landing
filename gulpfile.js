@@ -1,6 +1,7 @@
 let gulp = require('gulp')
 let gulpConnect = require('gulp-connect')
 
+let image = require('gulp-image');
 let sass = require('gulp-sass');
 let gulpClean = require('gulp-clean');
 // let gulpMinifyCss = require('gulp-minify-css');
@@ -15,8 +16,13 @@ gulp.task('server',async function(){
 	})
 })
 // task untuk minify
+gulp.task('image', async function () {
+  gulp.src('./assets/images/*')
+    .pipe(image())
+    .pipe(gulp.dest('./dist/image'));
+});
 gulp.task('minify-sass', async function () {
-  gulp.src('./sass/**/*.scss')
+  gulp.src('./sass/*.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('dist'))
         .pipe(gulpConnect.reload());
@@ -54,6 +60,7 @@ gulp.task('watch', async function () {
     gulp.series(['minify-sass'])(done);
   });
 	gulp.watch('./assets/js/*.js', gulp.series('minify-js'));
+	gulp.watch('./assets/images/*.*', gulp.series('image'));
 	// gulp.watch('./assets/css/*.css', gulp.series('minify-css'));
 	gulp.watch('./*.html', gulp.series('minify-html'));
 });
