@@ -9,13 +9,12 @@
 </head>
 <body>
   <!-- Notification -->
-  <div class="notif__cookies">
+  <div class="notif__cookies" id="notif__cookies">
     <div class="notif__cookies--wrapper">
       <div class="notif__cookies--text">
-        <p>By accessing and using this website, you acknowledge that you have read and</p>
-        <p>understand our <a href="javascript:void(0)">Cookie Policy</a>, <a href="javascript:void(0)">Privacy Policy</a>, and our <a href="javascript:void(0)">Terms of Service</a>.</p>
+        <p>By accessing and using this website, you acknowledge that you have read and understand our <a href="javascript:void(0)">Cookie Policy</a>, <a href="javascript:void(0)">Privacy Policy</a>, and our <a href="javascript:void(0)">Terms of Service</a>.</p>
       </div>
-      <button class="notif__cookies--btn" id="notif__cookies--btn">Got it</button>
+      <button class="notif__cookies--btn" onclick="document.getElementById('notif__cookies').classList.toggle('closed');">Got it</button>
     </div>
   </div>
   <!-- /Notification -->
@@ -27,176 +26,170 @@
       <figure class="heroshot__logo">
         <img src="./image/logo.png" alt="logo" />
       </figure>
-      <h1>Hello! I'm Riventus AHA</h1>
-      <h3>
-        <strong>
-          Consult, Design, and Develop Websites
-        </strong>
-      </h3>
-      <h5>
-        Have something great in mind? Feel free to contact me.
-      </h5>
-      <h5>
-        I'll help you to make it happen.
-      </h5>
-      <button class="heroshot__btn">
-        Let's Make Contact
-      </button>
+      <div class="heroshot__content">
+        <h1>Hello! I'm Riventus AHA</h1>
+        <h3>
+          <strong>
+            Consult, Design, and Develop Websites
+          </strong>
+        </h3>
+        <p>
+          Have something great in mind? Feel free to contact me.
+        </p>
+        <p>
+          I'll help you to make it happen.
+        </p>
+        <button class="heroshot__content--btn">
+          <h6>Let's Make Contact</h6>
+        </button>
+      </div>
     </div>
     <!-- /HERO-SHOT -->
     
     <!-- SERVICE -->
-    <div class="service__container">
+    <div class="service">
       <div class="service__highlight">
-        <h1>
+        <h2>
           How Can I Help You?
-        </h1>
-        <h5>
+        </h2>
+        <p>
           Our work then targeted, best practices outcomes social innovation synergy.
-        </h5>
-        <h5>
+        </p>
+        <p>
           Venture philanthropy, revolutionary inclusive policymaker relief. User-centered
-        </h5>
-        <h5>
+        </p>
+        <p>
           program areas scale.
-        </h5>
+        </p>
       </div>
-
-      <!-- item -->
-      <div class="service__items">
-        <div class="service__items--head">
-          <div class="service__items--head-title">
-            Consult
-          </div>
-          <div class="service__items--head-icon">
-            <figure>
-              <img src="https://via.placeholder.com/30" alt="icon">
+      <div class="service__wrapper">
+        <!-- item -->
+        <div class="service__items">
+          <div class="service__items--head">
+            <h5 class="service__items--head-title">
+              Consult
+            </h5>
+            <figure class="service__items--head-icon">
+              <img src="./image/icon_msg.png" alt="icon">
             </figure>
           </div>
+          <p class="service__items--content">
+            Co-create, design thinking; strengthen infrastructure resist granular.
+            Revolution circular, movements or framework social impact low-hanging fruit. 
+            Save the world compelling revolutionary progress.
+          </p>
         </div>
-        <div class="service__items--content">
-          Co-create, design thinking; strengthen infrastructure resist granular.
-          Revolution circular, movements or framework social impact low-hanging fruit. 
-          Save the world compelling revolutionary progress.
-        </div>
-      </div>
-
-      <!-- item -->
-      <div class="service__items">
-        <div class="service__items--head">
-          <div class="service__items--head-title">
-            Design
-          </div>
-          <div class="service__items--head-icon">
-            <figure>
-              <img src="https://via.placeholder.com/30" alt="icon">
+  
+        <!-- item -->
+        <div class="service__items">
+          <div class="service__items--head">
+            <h5 class="service__items--head-title">
+              Design
+            </h5>
+            <figure class="service__items--head-icon">
+              <img src="./image/icon_msg.png" alt="icon">
             </figure>
           </div>
+          <p class="service__items--content">
+            Policymaker collaborates collective impact humanitarian shared value
+      vocabulary inspire issue outcomes agile. Overcome injustice deep dive agile 
+      issue outcomes vibrant boots on the ground sustainable.
+          </p>
         </div>
-        <div class="service__items--content">
-          Policymaker collaborates collective impact humanitarian shared value
-    vocabulary inspire issue outcomes agile. Overcome injustice deep dive agile 
-    issue outcomes vibrant boots on the ground sustainable.
-        </div>
-      </div>
-
-      <!-- item -->
-      <div class="service__items">
-        <div class="service__items--head">
-          <div class="service__items--head-title">
-            Develop
-          </div>
-          <div class="service__items--head-icon">
-            <figure>
-              <img src="https://via.placeholder.com/30" alt="icon">
+  
+        <!-- item -->
+        <div class="service__items">
+          <div class="service__items--head">
+            <h5 class="service__items--head-title">
+              Develop
+            </h5>
+            <figure class="service__items--head-icon">
+              <img src="./image/icon_msg.png" alt="icon">
             </figure>
           </div>
+          <p class="service__items--content">
+            Revolutionary circular, movements a or impact framework social impact low-
+      hanging. Save the compelling revolutionary inspire progress. Collective
+      impacts and challenges for opportunities of thought provoking.
+          </p>
         </div>
-        <div class="service__items--content">
-          Revolutionary circular, movements a or impact framework social impact low-
-    hanging. Save the compelling revolutionary inspire progress. Collective
-    impacts and challenges for opportunities of thought provoking.
-        </div>
-      </div>
-
-      <!-- item -->
-      <div class="service__items">
-        <div class="service__items--head">
-          <div class="service__items--head-title">
-            Marketing
-          </div>
-          <div class="service__items--head-icon">
-            <figure>
-              <img src="https://via.placeholder.com/30" alt="icon">
+  
+        <!-- item -->
+        <div class="service__items">
+          <div class="service__items--head">
+            <h5 class="service__items--head-title">
+              Marketing
+            </h5>
+            <figure class="service__items--head-icon">
+              <img src="./image/icon_msg.png" alt="icon">
             </figure>
           </div>
+          <p class="service__items--content">
+            Peaceful; vibrant paradigm, collaborative cities. Shared vocabulary agile,
+      replicable, effective altruism youth. Mobilize commitment to overcome
+      injustice resilient, uplift social transparent effective.
+          </p>
         </div>
-        <div class="service__items--content">
-          Peaceful; vibrant paradigm, collaborative cities. Shared vocabulary agile,
-    replicable, effective altruism youth. Mobilize commitment to overcome
-    injustice resilient, uplift social transparent effective.
-        </div>
-      </div>
-
-      <!-- item -->
-      <div class="service__items">
-        <div class="service__items--head">
-          <div class="service__items--head-title">
-            Manage
-          </div>
-          <div class="service__items--head-icon">
-            <figure>
-              <img src="https://via.placeholder.com/30" alt="icon">
+  
+        <!-- item -->
+        <div class="service__items">
+          <div class="service__items--head">
+            <h5 class="service__items--head-title">
+              Manage
+            </h5>
+            <figure class="service__items--head-icon">
+              <img src="./image/icon_msg.png" alt="icon">
             </figure>
           </div>
+          <p class="service__items--content">
+            Change-makers innovation or shared unit of analysis. Overcome injustice
+      outcomes strategize vibrant boots on the ground sustainable. Optimism,
+      effective altruism invest optimism corporate social.
+          </p>
         </div>
-        <div class="service__items--content">
-          Change-makers innovation or shared unit of analysis. Overcome injustice
-    outcomes strategize vibrant boots on the ground sustainable. Optimism,
-    effective altruism invest optimism corporate social.
-        </div>
-      </div>
-
-      <!-- item -->
-      <div class="service__items">
-        <div class="service__items--head">
-          <div class="service__items--head-title">
-            Evolve
-          </div>
-          <div class="service__items--head-icon">
-            <figure>
-              <img src="https://via.placeholder.com/30" alt="icon">
+  
+        <!-- item -->
+        <div class="service__items">
+          <div class="service__items--head">
+            <h5 class="service__items--head-title">
+              Evolve
+            </h5>
+            <figure class="service__items--head-icon">
+              <img src="./image/icon_msg.png" alt="icon">
             </figure>
           </div>
+          <p class="service__items--content">
+            Activate catalyze and impact contextualize humanitarian. Unit of analysis
+      overcome injustice storytelling altruism. Thought leadership mass 
+      incarceration. Outcomes big data, fairness, social game-changer.
+          </p>
         </div>
-        <div class="service__items--content">
-          Activate catalyze and impact contextualize humanitarian. Unit of analysis
-    overcome injustice storytelling altruism. Thought leadership mass 
-    incarceration. Outcomes big data, fairness, social game-changer.
-        </div>
+
       </div>
 
     </div>
     <!-- /SERVICE -->
     
     <!-- Sliding -->
-    <div class="sliding__wrapper">
-      <h4><strong>
-        Get latest updates in web technologies
-      </strong></h4>
-      <p>
-        I write articles related to web technologies, such as design trends, development
-      </p>
-      <p>
-        tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get <br/>them all.
-      </p>
+    <div class="sliding__wrapper closedSlide" id="sliding__wrapper">
+      <span class="sliding__close" onclick="closeSlide()">x</span>
+      <div class="sliding__content">
+        <h4><strong>
+          Get latest updates in web technologies
+        </strong></h4>
+        <p>
+          I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.
+        </p>
+      </div>
+      <div class="sliding__form">
+        <input class="sliding__form--input" type="email" name="email" id="inputemail" placeholder="Email address" />
+        <button class="sliding__form--btn" type="submit">Count me in!</button>
+      </div>
     </div>
     <!-- /Sliding -->
 
     <!-- FOOTER -->
-    <div class="footer">
-      Good luck and may the force be with you! &copy; 2021 Cermati.com
-    </div>
+    <div class="footer">&copy; 2021 Riventus AHA. All rights reserved.</div>
     <!-- /FOOTER -->
 
   </div>
