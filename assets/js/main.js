@@ -8,14 +8,17 @@ const showSlide = () =>{
   
   let scrolled = (winScroll / height) * 100;
   if(scrolled >= 30){
-
+    if(localStorage.getItem('closedSlide') == null){
+      slide.classList.remove('closedSlide');
+      return;
+    }
     if(parseInt(localStorage.getItem('closedSlide')) <= new Date().getTime()){
       slide.classList.remove('closedSlide');
-    }
-    if(parseInt(localStorage.getItem('closedSlide')) > new Date().getTime()){
+      return;
+    }else{
       slide.classList.add('closedSlide');
+      return;
     }
-
   }
 }
 const closeSlide = () =>{
