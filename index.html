@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
-  <title>Riventus AHA | Cermati.com Front-end Developer Entry Test</title>
+  <title>Riventus AHA | Responsive Web App</title>
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
@@ -189,12 +189,15 @@
     <!-- /Sliding -->
 
     <!-- FOOTER -->
-    <div class="footer">&copy; 2021 Riventus AHA. All rights reserved.</div>
+    <div class="footer">&copy; <span id="year"></span> Riventus AHA. All rights reserved.</div>
     <!-- /FOOTER -->
 
   </div>
 
   <!-- ADD-SCRIPT -->
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
   <script src="./main.js"></script>
   <!-- /ADD-SCRIPT -->
 </body>
